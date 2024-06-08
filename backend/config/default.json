@@ -1,0 +1,24 @@
+{
+    "app": {
+        "name": "vacationSite",
+        "port": 8080,
+        "protocol": "http",
+        "host": "localhost",
+        "secret": "whisky",
+        "jwt": {
+            "expires": "2h",
+            "secret": "vodka"
+        },
+        "images": {
+            "path": "./DBpic"
+        }
+    },
+    "mysql": {
+        "host": "db",
+        "user": "root",
+        "password": "",
+        "database": "vacationsDB",
+        "port": 3306,
+        "connectionLimit": 10
+    }
+}

@@ -1,0 +1,22 @@
+.Layout {
+    height: 100vh; /* Ensure the layout takes full viewport height */
+    display: grid;
+    grid-template-rows: auto 1fr; /* Adjust to let header size automatically and main take remaining space */
+    grid-template-columns: 1fr; /* Single column layout */
+    box-sizing: border-box;
+}
+
+.Layout > header {
+    grid-column: 1 / -1; /* Span full width */
+    background-color: #3498db; /* Ensure header background color is consistent */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Add some padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.Layout > main {
+    overflow: auto;
+    grid-column: 1 / -1; /* Span full width */
+    padding: 20px; /* Add some padding */
+    background-color: #f0f0f0; /* Light background color for contrast */
+}

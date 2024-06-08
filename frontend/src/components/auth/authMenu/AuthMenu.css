@@ -1,0 +1,23 @@
+.AuthMenu {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.AuthMenu a, .AuthMenu span {
+    color: #fff; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 14px; /* Adjust font size */
+    margin: 0 10px; /* Add margin to separate elements */
+}
+
+.AuthMenu a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.AuthMenu span:first-child {
+    margin-left: 0; /* Remove left margin for the first item */
+}
+
+.AuthMenu span:last-child {
+    margin-right: 0; /* Remove right margin for the last item */
+}

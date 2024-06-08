@@ -1,0 +1,34 @@
+.AdminPage {
+    padding: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.admin-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.admin-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-button:hover {
+    background-color: #2980b9;
+}
+
+.admin-button svg {
+    font-size: 20px;
+}

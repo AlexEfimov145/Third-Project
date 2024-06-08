@@ -1,0 +1,11 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+.Home > div {
+    width: 100%;
+    max-width: 1600px;
+    margin-bottom: 20px;
+}

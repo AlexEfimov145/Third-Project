@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=
+      - DB_NAME=vacationsDB
+      - SUPPRESS_NO_CONFIG_WARNING=true
+    volumes:
+      - ./backend/config:/app/config
+      - ./backend/DBpic:/app/DBpic
+    depends_on:
+      - db
+
+  db:
+    image: mysql:latest
+    container_name: vacationsDB
+    environment:
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_DATABASE: vacationsDB
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "3310:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db/vacationsDB.sql:/docker-entrypoint-initdb.d/vacationsDB.sql
+
+volumes:
+  db_data:

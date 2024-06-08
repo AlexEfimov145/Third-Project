@@ -1,0 +1,79 @@
+.AddVacation {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.AddVacation h2 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.AddVacation form {
+    display: flex;
+    flex-direction: column;
+}
+
+.AddVacation label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.AddVacation input[type="text"],
+.AddVacation textarea,
+.AddVacation input[type="date"],
+.AddVacation input[type="number"],
+.AddVacation input[type="file"],
+.AddVacation button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.AddVacation textarea {
+    resize: none;
+    height: 100px;
+}
+
+.AddVacation button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.AddVacation button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.AddVacation button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.AddVacation button[type="button"]:hover {
+    background-color: #bbb;
+}
+
+/* Error message styling */
+.AddVacation span {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+}

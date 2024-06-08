@@ -1,0 +1,16 @@
+.Header {
+    background-color: #2fa4f1; /* Add a background color */
+    color: #fff; /* Set text color to white */
+    padding: 20px; /* Add padding */
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space between */
+    align-items: center; /* Center items vertically */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; /* Set a clean font */
+}
+
+.Header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Set font size */
+    font-weight: bold; /* Make the font bold */
+}

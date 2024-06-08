@@ -1,0 +1,77 @@
+.Signup {
+    max-width: 350px; /* Adjusted width to be slimmer */
+    margin: 50px auto; /* Add margin to top and bottom to create spacing */
+    padding: 2.5rem; /* Increased padding for more height */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.Signup h2 {
+    text-align: center;
+    margin-bottom: 1.5rem; /* Slightly increased margin-bottom for more spacing */
+    color: #2c3e50;
+}
+
+.Signup label {
+    display: block;
+    text-align: left; /* Align labels to the left */
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+    text-transform: capitalize;
+}
+
+.Signup input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem; /* Slightly increased margin-bottom for more spacing */
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.Signup button {
+    width: 100%; /* Make button width match input fields */
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.Signup button:hover {
+    background-color: #2980b9;
+}
+
+.Signup p {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.Signup .login-link {
+    display: block;
+    text-align: center;
+    margin-top: -0.5rem; /* Adjust margin to align with the text */
+}
+
+.Signup .login-link button {
+    background-color: transparent;
+    color: #3498db;
+    border: none;
+    padding: 0.5rem 1rem; /* Adjust padding for smaller button */
+    cursor: pointer;
+    font-size: 0.9rem; /* Make the login button text smaller */
+}
+
+.Signup .login-link button:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}

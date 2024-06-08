@@ -1,0 +1,12 @@
+.Vacations {
+    display: flex;
+    justify-content: center; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.Vacations > div {
+    width: 100%; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+}

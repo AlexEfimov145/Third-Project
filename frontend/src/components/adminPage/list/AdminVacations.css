@@ -1,0 +1,44 @@
+.AdminVacationsList {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+    justify-content: flex-start; /* Start items from the top */
+    align-items: center; /* Center the items horizontally */
+    padding-top: 30px;
+    padding-bottom: 100px; /* Add extra padding to the bottom */
+    max-width: 1440px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box;
+    position: relative; /* Establish a positioning context */
+}
+
+.vacations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between cards */
+    width: 100%; /* Full width for grid */
+}
+
+.pagination {
+    width: 100%; /* Full width for pagination */
+    position: absolute; /* Position absolutely within the container */
+    bottom: 0; /* Stick to the bottom of the container */
+    padding: 10px 0; /* Padding around pagination */
+    background-color: #ffffff; /* Background color to match the page */
+    text-align: center; /* Center pagination buttons */
+}
+
+.pagination button {
+    margin: 0 5px; /* Space between pagination buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #2980b9;
+}
