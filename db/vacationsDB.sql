@@ -92,7 +92,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Test','User','test@example.com','password',1),(2,'alex','efimov','alexefimov145@gmail.com','c01fbd1d5b65948318afe0d959ad09c9',2),(58,'alexander','efimov','a@gmail.com','c01fbd1d5b65948318afe0d959ad09c9',1),(62,'wswswsw','swswswsw','wswswsw@gmail.com','c01fbd1d5b65948318afe0d959ad09c9',1),(63,'john','wick','john@wick.com','c01fbd1d5b65948318afe0d959ad09c9',1);
+INSERT INTO `users` VALUES (1,'Test','User','test@example.com','password',1),(2,'alex','efimov','alexefimov145@gmail.com','c01fbd1d5b65948318afe0d959ad09c9',2),(58,'alexander','efimov','a@gmail.com','c01fbd1d5b65948318afe0d959ad09c9',1),(63,'john','wick','john@wick.com','c01fbd1d5b65948318afe0d959ad09c9',1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
