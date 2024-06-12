@@ -2,6 +2,9 @@ import { Notyf } from "notyf";
 import appConfig from "../utils/AppConfig";
 
 class Notify {
+    info(arg0: string) {
+        throw new Error("Method not implemented.");
+    }
     warning(arg0: string) {
         throw new Error('Method not implemented.');
     }

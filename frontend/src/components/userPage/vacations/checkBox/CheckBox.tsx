@@ -48,7 +48,7 @@ function CheckBox(): JSX.Element {
             setActiveFilter('');
             return;
         }
-
+    
         setActiveFilter(filterType);
         let filteredVacations: Vacation[] = [];
         try {
@@ -63,14 +63,16 @@ function CheckBox(): JSX.Element {
                     filteredVacations = await vacationsService.getVacationByBetweenDates(new Date());
                     break;
             }
-            if (filteredVacations.length === 0) {
-                notifyService.success(`No vacations found in ${filterType} filter.`);
-            }
             vacationsStore.dispatch({ type: VacationsActionType.SetVacations, payload: filteredVacations });
+            if (filteredVacations.length === 0) {
+                notifyService.info(`No vacations found for '${filterType}' filter.`);
+            }
         } catch (error) {
-            notifyService.error(`Failed to load vacations for ${filterType} filter.`);
+             // Consider whether to reset the filter on error based on your design choices
+            vacationsStore.dispatch({ type: VacationsActionType.SetVacations, payload: [] }); // Ensure UI updates even on error
         }
     };
+    
 
     return (
         <div className="checkBox">

@@ -62,15 +62,10 @@
 
 .VacationCard .date-item i,
 .VacationCard .date-item .fa-calendar {
-    margin-right: 2px; 
+    margin-right: 3px; 
+    margin-bottom: 3px;
 }
 
-/* .VacationCard .details {
-    font-size: 1rem;
-    color: #555;
-    margin: 10px 0;
-    width: 100%;
-} */
 .VacationCard .details {
     font-size: 1rem;
     color: #555;

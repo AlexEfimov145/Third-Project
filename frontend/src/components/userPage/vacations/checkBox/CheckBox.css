@@ -4,7 +4,7 @@
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     margin: 0 auto 20px auto;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@
 }
 
 .checkBox label:hover {
-    background-color: #e0e0e0;
+    background-color:skyblue;
 }
 
 .checkBox button {

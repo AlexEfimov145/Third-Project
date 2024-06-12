@@ -5,7 +5,7 @@ import formatPrice from "../../../utils/FormatPrice";
 import formatDate from "../../../utils/FormatDate";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faEdit } from '@fortawesome/free-solid-svg-icons';
-import DeleteButton from '../deleteVacation/DeleteVacation'; // Adjust the import path as necessary
+import DeleteButton from '../deleteVacation/DeleteVacation'; 
 
 interface AdminVacationCardProps {
     Vacation: Vacation;
@@ -15,8 +15,8 @@ interface AdminVacationCardProps {
 
 function AdminVacationCard({ Vacation, onEdit, onDelete }: AdminVacationCardProps): JSX.Element {
     return (
-        <div className="VacationCard">
-            <img src={Vacation.picUrl} alt={`View details for ${Vacation.destination}`} />
+        <div className="AdminVacationCard">
+            <img src={Vacation.picUrl} alt='' />
             <div className="destination">{Vacation.destination}</div>
             <div className="card-buttons">
                 <button onClick={onEdit} className="edit-button">
